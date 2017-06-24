@@ -9,7 +9,7 @@ class Data
     {
         $this->logger = $logger;
     }
-    
+
     public function log($text)
     {
         $this->logger->notice($text);

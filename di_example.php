@@ -5,7 +5,9 @@ use Magento\Framework\Logger\Monolog;
 
 class Data
 {
-    public function log($text)
+    private $logger;
+
+    public function log(string $text)
     {
         $this->logger = new Monolog('yireo');
         $this->logger->notice('Hello World');
