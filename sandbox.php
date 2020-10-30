@@ -9,4 +9,4 @@ require_once 'app/bootstrap.php';
 $bootstrap = Bootstrap::create(BP, $_SERVER);
 
 $example = $bootstrap->getObjectManager()->create(LoggerInterface::class);
-Zend_Debug::dump(get_class($example));
+echo get_class($example) . "\n";
